@@ -13,8 +13,7 @@ import (
 // It is skipped until substrate ships a Bedrock control-plane batch-inference
 // plugin. The existing substrate bedrock_runtime plugin covers only the data
 // plane (InvokeModel/ApplyGuardrail), not the control-plane ModelInvocationJob
-// APIs this adapter uses. Tracking: scttfrdmn/substrate (feature request linked
-// from aws-openondemand#11).
+// APIs this adapter uses. Tracking: scttfrdmn/substrate#297.
 func TestCreateGetStopJob_Substrate(t *testing.T) {
-	t.Skip("pending substrate Bedrock control-plane batch-inference plugin; see scttfrdmn/substrate feature request")
+	t.Skip("pending substrate Bedrock control-plane batch-inference plugin; see scttfrdmn/substrate#297")
 }
