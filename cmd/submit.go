@@ -56,7 +56,7 @@ var submitCmd = &cobra.Command{
 		}
 
 		ctx := context.Background()
-		client, err := bedrock.New(ctx, region)
+		client, err := bedrock.New(ctx, region, awsOptions(ctx)...)
 		if err != nil {
 			return err
 		}
